@@ -1,0 +1,17 @@
+# work dir
+workdir: "/data/CCRCCDI/analysis/ccrtegs9/snakemake_test"
+resultsdir: "/data/CCRCCDI/analysis/ccrtegs9/snakemake_test/results"
+scriptsdir: "/data/CCRCCDI/analysis/ccrtegs9/snakemake_test/workflow/scripts"
+# sample manifest
+samplemanifest: "/data/CCRCCDI/analysis/ccrtegs9/snakemake_test/manifest/sample_manifest.csv"
+# adapter link
+adapters: "/data/CCRCCDI/analysis/ccrtegs9/snakemake_test/resources/TruSeq_and_nextera_adapters.consolidated.fa"
+
+#settings for juicer
+genome: "hg38"
+juicer_sh: "/data/CCRCCDI/analysis/ccrtegs9/snakemake_test/resources/juicer.sh"
+restr_site_file: "/data/CCRCCDI/analysis/ccrtegs9/snakemake_test/resources/hg38_Arima.txt"
+site: "Arima" #Providing a restriction enzyme
+threads: 54
+stageflag: "NA"
+process_method: "PRE"
