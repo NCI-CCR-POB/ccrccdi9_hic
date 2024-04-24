@@ -9,6 +9,8 @@ The following directories are created under the WORKDIR/results directory:
     - `debug`
     - `fastq`
     - `splits`
+  
+<img width="249" alt="Screenshot 2024-04-24 at 2 39 17 PM" src="https://github.com/NCI-CCR-POB/ccrccdi9_hic/assets/1800604/33669c13-88f6-4f71-a047-771f5563bcaa">
 
 ## Notes
 * Users will be able to load the two `hic` files and the two `inter_hists.m` files to Juicebox to view the results
