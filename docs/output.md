@@ -15,3 +15,14 @@ The following directories are created under the WORKDIR/results directory:
 ## Notes
 * Users will be able to load the two `hic` files and the two `inter_hists.m` files to Juicebox to view the results
 * The `merged_nodups.txt` is needed for further secondary analysis by some tools
+
+## More details about individual ouputs from Juicer
+Reference: https://github.com/aidenlab/juicer/wiki/Running-Juicer-on-a-cluster
+* inter.hic / inter_30.hic: The .hic files for Hi-C contacts at MAPQ > 0 and at MAPQ >= 30, respectively
+* merged_nodups.txt: The Hi-C contacts with duplicates removed. This file is also input to the assembly and diploid pipelines
+* collisions.txt: Reads that map to more than two places in the genome
+* inter.txt, inter_hists.m / inter_30.txt, inter_30_hists.m: The statistics and graphs files for Hi-C contacts at MAPQ > 0 and at MAPQ >= 30, respectively. These are also stored within the respective .hic files in the header. The .m files can be loaded into Matlab. The statistics and graphs are displayed under Dataset Metrics when loaded into Juicebox
+* dups.txt, opt_dups.txt: Duplicates and optical duplicates
+* abnormal.sam, unmapped.sam: Abnormal chimeric and unmapped reads
+* merged_sort.txt: This is a combination of merged_nodups / dups / opt_dups and can be deleted once the pipeline has successfully completed
+* stats_dups.txt / stats_dups_hists.m: Statistics and graphs on the duplicates
