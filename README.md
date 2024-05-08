@@ -27,7 +27,7 @@ The following post-juicer steps are currently under development
 
 * Step 2: Run the pipeline with test data. Read: [https://github.com/NCI-CCR-POB/ccrccdi9_hic/blob/main/docs/user-guide/run.md](https://github.com/NCI-CCR-POB/ccrccdi9_hic/blob/main/docs/run.md) 
 
-* Step 3: Example the outputs. Read: [https://github.com/NCI-CCR-POB/ccrccdi9_hic/blob/main/docs/user-guide/output.md](https://github.com/NCI-CCR-POB/ccrccdi9_hic/blob/main/docs/output.md) 
+* Step 3: Examine output files. Read: [https://github.com/NCI-CCR-POB/ccrccdi9_hic/blob/main/docs/user-guide/output.md](https://github.com/NCI-CCR-POB/ccrccdi9_hic/blob/main/docs/output.md) 
 
 * Step 4: Preparing input files for your own data: [Read Preparing-files.md markdown](https://github.com/NCI-CCR-POB/ccrccdi9_hic/blob/main/docs/preparing-files.md)
 
