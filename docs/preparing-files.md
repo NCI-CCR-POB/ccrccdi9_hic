@@ -41,10 +41,10 @@ This manifest will include information to sample level information. It includes 
 An example sampleManifest file is shown below:
 
 
-| sampleName| path_to_R1| path_to_R2
-| --- |--- |--- |--- |--- |--- |--- |
-| S1| PIPELINE_HOME/input/S1.R1.fastq.gz| PIPELINE_HOME/input/S1.R2.fastq.gz
-| S2| PIPELINE_HOME/input/S2.R1.fastq.gz| PIPELINE_HOME/input/S2.R2.fastq.gz
+| sampleName | path_to_R1                                                          | path_to_R2                                                          |
+| ---------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| S1         | /data/CCRCCDI/analysis/ccrtegs9/snakemake_test/input/S1.R1.fastq.gz | /data/CCRCCDI/analysis/ccrtegs9/snakemake_test/input/S1.R2.fastq.gz |
+| S2         | /data/CCRCCDI/analysis/ccrtegs9/snakemake_test/input/S2.R1.fastq.gz | /data/CCRCCDI/analysis/ccrtegs9/snakemake_test/input/S2.R2.fastq.gz |
 
 ## Merge technical replicates
 Note: Prior to using this pipeline, please merge any technical replicates - these could be files that were run across multiple lanes, or files that were generated from the same library i.e. same growth. Example code has been provided below:
