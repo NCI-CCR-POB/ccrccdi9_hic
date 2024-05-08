@@ -21,9 +21,13 @@ There are several groups of parameters that are editable for the user to control
 - The following are settings for the Juicer tool to run
     - Genome: default to `hg38`. Currently support is only provided for this genome
     - Link to the juicer script. Located inside `resources` within the snakemake project
-    - Restriction file site: Provided to you inside `resources` within the snakemake project. The test data is for Arima. More restriction site options can be found at /usr/local/apps/juicer/juicer-1.6/restriction_sites
+    - Restriction file site: Provided to you inside `resources` within the snakemake project. The test data is for Arima. More restriction site options can be found at `/usr/local/apps/juicer/juicer-1.6/restriction_sites`
     - Threads: Set to 54
     - Stageflag: Offers users a way to control the running of Juicer . Can accept the following values `merge" | "dedup" | "final" | "postproc" | "early" | "chimeric" `. Default value is `NA` which is the normal running mode. For more details on these settings please read the Juicer wiki page.
+
+Figure shows restriction site file options avaiable as of May 2024 in Biowulf
+<img width="878" alt="Screenshot 2024-05-08 at 2 41 37 PM" src="https://github.com/NCI-CCR-POB/fruitsc/assets/1800604/9affe61c-9d5f-49b8-bb88-2a792f1720fa">
+
 
 ## Preparing Manifest (REQUIRED)
 There is one manifest that is required for this pipeline.The paths of this file is defined in the snakemake_config.yaml file. This file is `samplemanifest`.
