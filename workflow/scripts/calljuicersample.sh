@@ -78,6 +78,7 @@ echo $JOBNAME
 #SBATCH --ntasks=16
 #SBATCH --cpus-per-task=16
 echo "Load juicer module and run command"
+echo "Important note: f flag turned off as it needs too much memory"
 module load juicer
 
 #Default running script is with the STAGEFLAG="NA". 
@@ -86,13 +87,13 @@ case "$STAGEFLAG" in
     "NA")
         echo "STAGEFLAG is NA"
         # Perform actions when STAGEFLAG is "NA"
-        $JUICER_SH -g $GENOME -d $MAIN_FOLDER -s $SITE -y $RESTR_SITE_FILE -t $THREADS -f
+        $JUICER_SH -g $GENOME -d $MAIN_FOLDER -s $SITE -y $RESTR_SITE_FILE -t $THREADS
         ;;
     "merge" | "dedup" | "final" | "postproc" | "early" | "chimeric")
         echo "STAGEFLAG is one of the accepted values (merge, dedup, final, postproc, early, chimeric)."
         echo $STAGEFLAG
         # Perform actions when STAGEFLAG is one of the accepted values
-        $JUICER_SH -g $GENOME -d $MAIN_FOLDER -s $SITE -y $RESTR_SITE_FILE -t $THREADS -f -S $STAGEFLAG
+        $JUICER_SH -g $GENOME -d $MAIN_FOLDER -s $SITE -y $RESTR_SITE_FILE -t $THREADS -S $STAGEFLAG
         ;;
     *)
         echo "Error: STAGEFLAG is not valid. It must be NA or one of the accepted values (merge, dedup, final, postproc, early, chimeric)."

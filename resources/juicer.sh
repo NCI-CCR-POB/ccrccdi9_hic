@@ -1386,7 +1386,7 @@ then
 	exit 1 
 fi 
 ${juiceDir}/scripts/juicer_hiccups.sh -j ${juiceDir}/scripts/juicer_tools \
-	-i $outputdir/inter_30.hic ${motifDir} -g $genomeID --ignore_sparsity flag
+	-i $outputdir/inter_30.hic ${motifDir} -g $genomeID
 date
 HICCUPS
 )
@@ -1414,7 +1414,7 @@ then
 	exit 1 
 fi 
 ${juiceDir}/scripts/juicer_arrowhead.sh -j ${juiceDir}/scripts/juicer_tools \
-	-i $outputdir/inter_30.hic --ignore_sparsity flag
+	-i $outputdir/inter_30.hic
 date
 ARROWS
 )
