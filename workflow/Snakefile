@@ -4,7 +4,7 @@ import itertools
 include: "rules/init.smk"
 include: "rules/qc.smk"
 include: "rules/calljuicer.smk"
-include: "rules/postjuicer.smk"
+#include: "rules/postjuicer.smk"
 
 def preprocess(wildcards):
     files=[]
@@ -13,16 +13,16 @@ def preprocess(wildcards):
         ### required files
         ##########################################
         #VALIDATION
-        h1v=expand(join(RESULTSDIR,"out_validation","{sample}.hic_validate.txt"),sample=SAMPLES)
-        files.extend(h1v)
-        h2v=expand(join(RESULTSDIR,"out_fastqc","{sample}.hic30_validate.txt"),sample=SAMPLES)
-        files.extend(h2v)
+        # h1v=expand(join(RESULTSDIR,"out_validation","{sample}.hic_validate.txt"),sample=SAMPLES)
+        # files.extend(h1v)
+        #h2v=expand(join(RESULTSDIR,"out_fastqc","{sample}.hic30_validate.txt"),sample=SAMPLES)
+        #files.extend(h2v)
 
         # NORM
-        h1n=expand(join(RESULTSDIR,'out_juicer',"{sample}","aligned/","{sample}.norm.inter.hic"),sample=SAMPLES)
-        files.extend(h1n)
-        h2n=expand(join(RESULTSDIR,'out_juicer',"{sample}","aligned/","{sample}.norm.inter30.hic"),sample=SAMPLES)
-        files.extend(h2n)
+        #h1n=expand(join(RESULTSDIR,'out_juicer',"{sample}","aligned/","{sample}.norm.inter.hic"),sample=SAMPLES)
+        # files.extend(h1n)
+        #h2n=expand(join(RESULTSDIR,'out_juicer',"{sample}","aligned/","{sample}.norm.inter30.hic"),sample=SAMPLES)
+        #files.extend(h2n)
 
         # MULTIQC
         mqc=expand(join(RESULTSDIR,'out_multiqc','multiqc_report.html'))
@@ -33,12 +33,15 @@ def preprocess(wildcards):
         files.extend(j1)
         j2=expand(join(RESULTSDIR,"out_juicer","{sample}","aligned/inter_30.hic"),sample=SAMPLES)
         files.extend(j2)
+        
         # FASTQC
         fq=expand(join(RESULTSDIR,"out_fastqc","{sample}.R{r}_fastqc.html"),sample=SAMPLES,r=[1,2])
         files.extend(fq)
+        
         # FASTQC on TRIM
         fq2=expand(join(RESULTSDIR,"out_fastqc","{sample}_trim.R{r}_fastqc.html"),sample=SAMPLES,r=[1,2])
         files.extend(fq2)
+        
         # TRIM
         trim=expand(join(RESULTSDIR,"out_trim","{sample}_trim.R{r}.fastq.gz"),sample=SAMPLES,r=[1,2])
         files.extend(trim)
