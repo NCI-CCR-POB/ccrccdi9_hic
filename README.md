@@ -16,8 +16,8 @@ This pipeline includes the following steps described below.
 * Call Juicer HiC tool which involves the following steps
   - Generate Hi-C contact maps
   - Normalization of hic files
-  - Call Arrowhead tool to identify contact maps
-  - Call Hiccups tool 
+  - Call Arrowhead tool to identify TADs
+  - Call Hiccups tool to identify loops
 
 ## How to set up snakemake pipeline
 
