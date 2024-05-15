@@ -13,13 +13,11 @@ This pipeline includes the following steps described below.
 * Trimming low quality reads 
 * Check quality of the trimmed reads
 * Make a QC HTML report
-* Call Juicer HiC tool
-
-The following post-juicer steps are currently under development
-
-* Normalization of hic files
-* Call Arrowhead tool to identify contact maps
-* Call Hiccups tool 
+* Call Juicer HiC tool which involves teh following steps
+  - Generate Hi-C contact maps
+  - Normalization of hic files
+  - Call Arrowhead tool to identify contact maps
+  - Call Hiccups tool 
 
 ## How to set up snakemake pipeline
 
