@@ -1,4 +1,4 @@
-# FruitsC : A CCBR Snakemake Pipeline for HiC data analysis
+# FruitsC : A Snakemake Pipeline for HiC data analysis
 
 This snakemake pipeline was developed for genome wide HiC data and uses a popular HiC tool called Juicer. It has been developed by the CCBR team for use in the NIH's Biowulf HPC Cluster and is currently in development mode
 
