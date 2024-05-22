@@ -16,8 +16,7 @@ As a result, the downstream steps have to be called separately for now. As an ex
 
 If not done already, please re-do these steps to ssh into the cluster
 ```
-# ssh into cluster's head node. An interactive session should be started before performing any of the pipeline sub-commands, even if the pipeline is to be executed on the cluster.
-
+# ssh into cluster's head node
 ssh -Y $USER@biowulf.nih.gov
 ```
 
