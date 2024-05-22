@@ -31,6 +31,8 @@ This pipeline includes the following steps described below.
 
 * Step 5: Run the pipeline with your own data (Same process as Step 2)
 
+* Post pipeline options: Read more here: https://github.com/NCI-CCR-POB/fruitsc/blob/main/docs/post_juicer.md
+
 ## Declarations
 
 This work has been developed and tested solely on NIH [HPC Biowulf](https://hpc.nih.gov/).
