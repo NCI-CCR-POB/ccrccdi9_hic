@@ -1,4 +1,4 @@
-# FruitsC : A CCBR Snakemake Pipeline for HiC data analysis
+# FruitsC : A Snakemake Pipeline for HiC data analysis
 
 This snakemake pipeline was developed for genome wide HiC data and uses a popular HiC tool called Juicer. It has been developed by the CCBR team for use in the NIH's Biowulf HPC Cluster and is currently in development mode
 
@@ -13,13 +13,11 @@ This pipeline includes the following steps described below.
 * Trimming low quality reads 
 * Check quality of the trimmed reads
 * Make a QC HTML report
-* Call Juicer HiC tool
-
-The following post-juicer steps are currently under development
-
-* Normalization of hic files
-* Call Arrowhead tool to identify contact maps
-* Call Hiccups tool 
+* Call Juicer HiC tool which involves the following steps
+  - Generate Hi-C contact maps
+  - Normalization of hic files
+  - Call Arrowhead tool to identify TADs
+  - Call Hiccups tool to identify loops
 
 ## How to set up snakemake pipeline
 
