@@ -17,7 +17,7 @@ To run any of these commands, follow the the syntax:
 ssh -Y $USER@biowulf.nih.gov
 
 #start interactive node
-sinteractive --mem=20g --cpus-per-task=8
+sinteractive --mem=60g --cpus-per-task=2
 
 # Download or clone this github repo to your directory . For example assume the snakemake project folder is "snakemake_test"
 
