@@ -5,7 +5,7 @@
 #SBATCH --time=48:00:00
 #SBATCH --mem=40gb
 #SBATCH --gres=lscratch:200
-#SBATCH --cpus-per-task=4
+#SBATCH --cpus-per-task=2
 
 ## TITLE: After juicer completes, run juicer tools validate
 
@@ -21,7 +21,6 @@ juicer_tools validate $ALIGNED"/inter.hic" > $ALIGNED"/validate_interhic.txt"
 
 juicer_tools validate $ALIGNED"/inter_30.hic" > $ALIGNED"/validate_interhic30.txt"
     
-done
 
 #how to run script
 # Step1 - cd to the snakemake scripts directory
